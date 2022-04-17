@@ -5,24 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registratiion</title>
+    <link rel="stylesheet" href="reg.css">
 </head>
 <body>
-    <link rel="reg" href="reg.js">
-    <div class="con">
-        <h1> Student registratiion</h1>
-        <form action="reg.php" method="post">
+  
+   
+    <div id="con">
+        <div style="text-align: center; background-color: rgb(211, 4, 211);">
+
+    <h1 > STUDENT Registration</h1>
+        </div>
+             <form action="reg.php" method="post">
+                 <table>
+                     
             <label for="name">Name</label>
             <input type="text" id="name"  placeholder="First name">
             <input type="text" id="name"  placeholder="Middle name">
             <input type="text" id="name"  placeholder="Last name">
              <br>
-            <label for="email">Email</label>
+            <label for="email">Email:</label>
             <input type="email" id="email"  placeholder="Email">
             <br>
-            <label for="password">Password</label>
+            <label for="password">Password:</label>
             <input type="password" id="password"  placeholder="Password">
             <br>
-            <label for="password">Confirm Password</label> 
+            <label for="password">Confirm Password:</label> 
             <input type="password" id="password"  placeholder="Confirm Password">
             <br>
             <label for="college"> College Name </label>
@@ -32,26 +39,26 @@
             <input type="number" id="phone" name="mobile" min="1" max="92" >
             <input type="tel" id="phone"  placeholder="enter 10 digit number">
             <br>
-            <label for="gender">Gender</label>
+            <label for="gender">Gender:</label>
             <select name="gender" id="gender"> 
                 <option value="male">Male</option>
                 <option value="female">Female</option>
                 <option value="other">Other</option>
             </select>
             <br>
-            <label for="address"> Address </label>
+            <label for="address"> Address :</label>
             <input type="text" id="address"  placeholder="Enter your Address">
             <br>
-            <label for="city"> City </label>
+            <label for="city"> City: </label>
             <input type="text" id="city"  placeholder="Enter your City">
             <br>
-            <label for="state"> State </label>
+            <label for="state"> State: </label>
             <input type="text" id="state"  placeholder="Enter your State">
             <br>
-            <label for="country"> Country </label>
+            <label for="country"> Country: </label>
             <input type="text" id="country"  placeholder="Enter your Country">
             <br>
-            <label for="hobbies">Hobbies</label>
+            <label for="hobbies">Hobbies:</label><br>
             <label for="music">Music</label>
             <input type="checkbox" id="music" name="hobbies" value="music">
             <label for="sports">sports</label>
@@ -63,11 +70,11 @@
             <br>
             
                        
-            <label for="Submit"></label>
+            
           
             
             <input type="submit" value="submit" >
-         
+                 </table>
         </form>
 
 
