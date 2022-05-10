@@ -19,8 +19,6 @@ $gender=$_POST['gender'];
 $city=$_POST['city'];
 $state=$_POST['state'];
 $country=$_POST['country'];
-$hobbies=$_POST['hobbies'];
-
 $q ="select * from local where fname ='$fname' && password = '$password'";
 $ch = mysqli_query($con,$q);
 $num = mysqli_num_rows($ch);
@@ -28,11 +26,12 @@ $num = mysqli_num_rows($ch);
 if($num == 1){
     echo"use different username";
 }else{
-$sql="Insert into local(fname,mname,lname,email,password,address,college,mobile,gender,city,state,country,hobbies)
-values ('$fname','$mname','$lname','$email','$password','$address','$college','$mobile','$gender','$city','$state','$country','$hobbies')";
+$sql="Insert into local(fname,mname,lname,email,password,address,college,mobile,gender,city,state,country)
+values ('$fname','$mname','$lname','$email','$password','$address','$college','$mobile','$gender','$city','$state','$country')";
 }
 
 if (mysqli_query($con, $sql)) {
+	header("location:display.php");
 	echo "New record created successfully";
 	echo "<a href='display.php'>Click for Display</a>          ";
 	echo "<a href='reg.html'>Back</a>";
