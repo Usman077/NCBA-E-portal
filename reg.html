@@ -12,91 +12,82 @@
 <body>
      
    
-    <div id="con">      
-    <h2 > STUDENT Registration</h2>
+    <div id="con" >      
+    <h1 align="center" > STUDENT Registration</h1>
              <form action="reg.php" method="post">
-                 <table>
+              <hr>
+               <table>
                     <tr>  
-                        <td> <label for="name">Name</label></td>
-                        <td> <input type="text" name="fname" placeholder="First name"> </td>
+                        <td><label for="name">Name:</label></td>
+                        <td><input type="text" name="fname" placeholder="First name"required> </td>
                         <td><input type="text" name="mname" placeholder="Middle name"></td> 
                         <td><input type="text" name="lname" placeholder="Last name"></td>           
-                    </tr> 
+                    </tr>     
                     <tr>
-                        <td><label for="email">Email</label></td>
-                        <td><input type="email" name="email" placeholder="Email"></td>
+                        <td><label for="email">Email:</label></td>
+                        <td colspan="3" ><input type="email" size="73" name="email" placeholder="abc@xyz.com"  ></td>
                     </tr>
                     <tr>
-                        <td><label for="password">Password</label></td>
-                        <td><input type="password" name="password" placeholder="Password"></td>
+                        <td><label for="password">Password:</label></td>
+                        <td colspan="3"><input type="password" size="73" name="password" placeholder="Password"required></td>
                     </tr>
                     <tr>
-                        <td><label for="cpassword">Confirm Password</label></td>
-                        <td><input type="password" name="password" placeholder="Confirm Password"></td>
+                        <td><label for="cpassword">Confirm Password:</label></td>
+                        <td colspan="3"><input type="password" size="73" name="password" placeholder="Confirm Password"required></td>
                     </tr>
                     <tr>
-                        <td><label for="address">Address</label></td>
-                        <td><input type="text" name="address" placeholder="Address"></td>
+                        <td><label for="address">Address:</label></td>
+                        <td colspan="3"><textarea name="address" id="address" row="90" cols="70" rows="4"></textarea></td>
                     </tr>
                     <tr>
-                        <td><label for="college">College Name</label></td>
-                        <td><input type="text" name="college" placeholder="College Name"></td>
+                        <td><label for="college">College Name:</label></td>
+                        <td colspan="3"><input type="text" size="73" name="college" placeholder="College Name"></td>
                     </tr>
                     <tr>
-                        <td><label for="mobile">Mobile Number</label></td> 
-                       <td> <select name="mobile" >
-                            <option value="+92">+92</option>
-                            <option value="+91">+91</option>
-                            <option value="+1">+1</option>
-                            <option value="+44">+44</option>
-                        </select> </td>
-                        <td><input type="number" name="mobile" placeholder="Mobile Number"></td>
+                       <td><label for="mobile">Mobile Number:</label></td> 
+                       <td colspan="3"> <p>+<select size="1">
+                           <option value="91">91</option>
+                           <option value="92">92</option>
+                           <option value="93">93</option>
+                       </select>
+                       <input type="number"  name="mobile" placeholder="Mobile Number" required> </p></td>
                     </tr>
                     <tr>
-                        <td><label for="gender">Gender</label></td>
+                        <td><label for="gender">Gender:</label></td>
                         <td>
-                            <select name="gender" >
+                            <select name="gender" required>
                                 <option value="Male">Male</option>
                                 <option value="Female">Female</option>
                                 <option value="other">Other</option>
 
                             </select> </td>
                     <tr>
-                        <td><label for="city">City</label></td>
-                        <td><input type="text" name="city" placeholder="City"></td>
+                        <td><label for="city">City:</label></td>
+                        <td colspan="3"><input type="text" size="73" name="city" placeholder="City"></td>
                     </tr>
                     <tr>
-                        <td><label for="state">State</label></td>
-                        <td><input type="text" name="state" placeholder="State"></td>
+                        <td><label for="state">State:</label></td>
+                        <td colspan="3"><input type="text" size="73" name="state" placeholder="State"></td>
                     </tr>
                     <tr>
-                        <td><label for="country">Country</label></td>
-                        <td><input type="text" name="country" placeholder="Country"></td>
+                        <td><label for="country">Country:</label></td>
+                        <td colspan="3"><input type="text" size="73" name="country" placeholder="Country"></td>
                     </tr>
                     <tr>
-                        <td><label for="hobbies">Hobbies</label></td>
-                        <td><input type="checkbox" name="hobbies" value="music">Music</td>
-                        <td><input type="checkbox" name="hobbies" value="sports">Sports</td>
-                        <td><input type="checkbox" name="hobbies" value="games">Games</td>
+                        <td><label for="hobbies">Hobbies:</label></td>
+                        <td><input type="checkbox" name="Hobbies" value="music">Music</td>
+                        <td><input type="checkbox" name="Sports" value="sports">Sports</td>
+                        <td><input type="checkbox" name="games" value="games">Games</td>
                       
                     </tr>
+                
                     
                  </table>
+                 <hr>
                     <input type="submit" name="submit" value="Submit">
         </form>
 
-        <script>
-            document.querySelector('submit').onclick=function(){
-             var password=document.querySelector('password').value;
-                var cpassword=document.querySelector('cpassword').value;
-                if(password!=cpassword){
-                    alert('Password does not match');
-                    return false;
-                }
-            
-            }
-        </script>
-
+       
     </div>
     
 </body>
