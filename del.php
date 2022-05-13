@@ -6,6 +6,7 @@ $rd=$_GET['id'];
  // sql to delete a record
  $sql = "DELETE FROM local WHERE id=$rd";
     if (mysqli_query($con, $sql)) {
+       header("location:display.php");
         echo "Record deleted successfully";
        echo '<a href="Display.php">Go back</a>';
     } else {

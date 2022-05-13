@@ -81,4 +81,5 @@ while($row=mysqli_fetch_array($result))
 
         background:linear-gradient(to right bottom,rgba(255,255,255,0.7),rgba(255,255,255,0.3));
         border-radius:2rem;
+        padding:2rem;
     }

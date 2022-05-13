@@ -30,8 +30,9 @@ $sql="Insert into local(fname,mname,lname,email,password,address,college,mobile,
 values ('$fname','$mname','$lname','$email','$password','$address','$college','$mobile','$gender','$city','$state','$country')";
 }
 
-if (mysqli_query($con, $sql)) {
-	header("location:display.php");
+if (mysqli_query($con, $sql))
+ {
+
 	echo "New record created successfully";
 	echo "<a href='display.php'>Click for Display</a>          ";
 	echo "<a href='reg.html'>Back</a>";
