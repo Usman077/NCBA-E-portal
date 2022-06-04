@@ -43,6 +43,7 @@ function validatePasswordStrength() {
     return true;
 }
 
+
 //phone number validation
 function validatePhone() {
     var phone = document.getElementById("phone").value;
