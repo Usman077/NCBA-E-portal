@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DISPLAY</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+    
 </head>
 <body>
     
@@ -18,8 +19,6 @@
     
 <tr><th>ID</th>
 <th>First Name</th>
-<th>Middle Name</th>
-<th>Last Name</th>
 <th>Email</th>
 <th>Password</th>
 <th>Address</th>
@@ -42,8 +41,6 @@ while($row=mysqli_fetch_array($result))
     "<tr>
     <td>".$row['id']."</td>
     <td>".$row['fname']."</td>
-    <td>".$row['mname']."</td>
-    <td>".$row['lname']."</td>
     <td>".$row['email']."</td>
     <td>".$row['password']."</td>
     <td>".$row['address']."</td>
@@ -60,12 +57,13 @@ while($row=mysqli_fetch_array($result))
 ?>
 
 </table>
+<button><a href="reg.html"> Back</a></button>
 </div>
 </body>
 </html>
 <style>
     body{
-        background:linear-gradient(to right,#65dfc9,#6cdbed);
+        background:linear-gradient(to right, #050c4f, #7fd5e2);
         min-height:100vh;
         display:flex;
         align-items: center;
@@ -83,3 +81,29 @@ while($row=mysqli_fetch_array($result))
         border-radius:2rem;
         padding:2rem;
     }
+    
+button {
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 60%;
+    font-size: large;
+    font-family: sans-serif;
+    display: flex;
+    border: 2px solid #426696;
+    margin: auto;
+    border-radius: 1rem;
+    background: none;
+    color: black;
+    text-decoration: none;
+}
+
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+
+button:hover {
+    width: 70%;
+}
