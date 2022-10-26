@@ -1,12 +1,12 @@
-#Registration form            
+# Registration form            
 It is basic student registration using php CREATE,READ,UPDATE,DELETE       
 
-#RUNING            
+# RUNING            
 TO run this code properly you have to install xampp
 then start apache and Mysql
 then go to admin and configure             
 
-#CONFIGURATION            
+# CONFIGURATION            
 default// hostname="localhost"
 default//username="admin"
 default//password=""   // none
